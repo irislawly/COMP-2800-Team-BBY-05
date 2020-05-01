@@ -1,0 +1,93 @@
+body {
+  font-family: verdana;
+  background-color: #f4f4f4;
+}
+
+#profile {
+  background-image: url("/images/Mountain-Landscape-Simple-Nature-Background-Image.jpg");
+  background-size: cover;
+  height: 206px;
+  text-align: center;
+}
+#profile img {
+  border-radius: 50%;
+  height: 70px;
+  margin-top: 37px;
+}
+#profile p {
+  color: white;
+}
+#profile #location {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#profile #role {
+  font-size: 14px;
+}
+
+#profile-container {
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+  box-shadow: 5px 10px 12px 0px;
+}
+#profile-container h1 {
+  color: #006837;
+  font-size: 20px;
+  padding: 1.5em;
+  font-weight: bold;
+}
+#profile-container #info-container {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+}
+#profile-container #info-container #image-container {
+  margin-left: 17px;
+}
+#profile-container #info-container #image-container img {
+  width: 132px;
+  height: 110px;
+  border: 1px solid black;
+  border-radius: 25%;
+}
+#profile-container #info-container #bio-container {
+  margin-left: 12px;
+  line-height: 0.8;
+  margin-top: 5px;
+}
+#profile-container #info-container #bio-container h1 {
+  font-size: 20;
+  color: black;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 25px;
+}
+#profile-container #info-container #bio-container h1 span {
+  font-size: 14px;
+  font-weight: normal;
+}
+#profile-container #info-container #bio-container p {
+  font-size: 14px;
+}
+#profile-container #info-container #bio-container p span {
+  font-size: 10px;
+}
+
+#edit-profile {
+  margin-left: 19px;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+  width: 123px;
+  height: 30px;
+  border-radius: 25%;
+  font-weight: bold;
+}
+
+#update {
+  text-align: right;
+  margin-right: 2px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=account_business.css.map */

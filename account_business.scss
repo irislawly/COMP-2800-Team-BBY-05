@@ -1,0 +1,104 @@
+body {
+    font-family: verdana;
+    background-color: #f4f4f4;
+}
+
+
+#profile {
+    background-image: url('/images/Mountain-Landscape-Simple-Nature-Background-Image.jpg');
+    background-size: cover;
+    height: 206px;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        height: 70px;
+        margin-top: 37px;
+    }
+
+    p {
+        color: white;
+    }
+
+    #location {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #role {
+        font-size: 14px;
+    }
+}
+
+#profile-container {
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 25px;
+    box-shadow: 5px 10px 12px 0px;
+
+    h1 {
+        color: #006837;
+        font-size: 20px;
+        padding: 1.5em;
+        font-weight: bold;
+    }
+
+    #info-container {
+        display: flex;
+        align-items: center;
+        margin-top: -30px;
+
+        #image-container {
+            margin-left: 17px;
+
+            img {
+                width: 132px;
+                height: 110px;
+                border: 1px solid black;
+                border-radius: 25%;
+            }
+        }
+
+        #bio-container {
+            margin-left: 12px;
+            line-height: 0.8;
+            margin-top: 5px;
+            h1 {
+                font-size: 20;
+                color: black;
+                font-weight: bold;
+                padding: 0;
+                margin-bottom: 25px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+
+            p {
+                font-size: 14px;
+
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+#edit-profile {
+    margin-left: 19px;
+    border: 1px solid black;
+    background-color: #f4f4f4;
+    width: 123px;
+    height: 30px;
+    border-radius: 25%;
+    font-weight: bold;
+}
+
+#update {
+    text-align: right;
+    margin-right: 2px;
+    margin-top: 5px;
+}
