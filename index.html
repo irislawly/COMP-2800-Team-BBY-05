@@ -4,12 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling/index.css">
     <title>COMP 2800 COVID-19 Project</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <!-- Nav Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">Login</a>
+        <a href="#contact">Signup</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- First Box -->
+    <div class="container1">
+        <div class="imageBox1">
+            <img src="indexImages/img1.png">
+        </div>
+        <div class="textBox1">
+            <h1>"Where Customers and Businesses Connect"</h1>
+            <p>We developed a web application with the mission to create a
+                bridge between customers and businesses.
+            </p>
+            <div class="subContainer1">
+                <button id="customerButton" onclick="customerAccount()">Customer</button>
+                <button id="businessButton" onclick="businessAccount()">Business</button>
+            </div>
+        </div>
+    </div>
+    <!-- Second Box -->
+    <div class="overBox">
+        <div class="headerBox2">
+            <h2>Why StockShop Works</h2>
+        </div>
+        <div class="container2">
+            <div class="textBox2">
+                <img src="indexImages/img2.png">
+                <h3>Track wait times</h3>
+                <p>Customers can track down the wait times
+                    of their favorite stores, accelerating
+                    their shopping experience.
+                </p>
+            </div>
+            <div class="textBox2">
+                <img src="indexImages/img3.png">
+                <h3>Marketing</h3>
+                <p>During this pandemic, small businesses are
+                    struggling to find ways to sell. We can allow small businesses
+                    to post, allowing customers to buy stock that would go to waste.
+                </p>
+            </div>
+            <div class="textBox2">
+                <img src="indexImages/img4.png">
+                <h3>Organization</h3>
+                <p>Big retail corporations are struggling to let
+                    customers know significant information. We allow corporations
+                    to notify customers of their current wait time and items in stock.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Third Box -->
+    <div class="container3">
+        <div class="subContainer3">
+            <div class="imageBox3">
+                <img src="indexImages/img6.png">
+            </div>
+            <div class="textBox3">
+                <h3>Businesses</h3>
+                <h2>You can still run a business.</h2>
+                <p>Be the first users of StockShop as it will allow
+                    businesses to give important information to customers
+                    and raise sales by 33%.
+                </p>
+                <button id="businessButton">Business</button>
+            </div>
+        </div>
+        <div class="subContainer3">
+            <div class="textBox3">
+                <h3>Customers</h3>
+                <h2>Differentiate your shopping experience
+                    with the source you need.
+                </h2>
+                <p>Be the first users of StockShop as it will allow
+                    access to more information and improve your shopping efficiency by 50%.
+                </p>
+                <button id="customerButton">Customer</button>
+            </div>
+            <div class="imageBox3">
+                <img src="indexImages/img5.png">
+            </div>
+        </div>
+    </div>
+    <!-- Fourth Box -->
+    <div class="container4">
+        <div class="headerBox4">
+            <h3>"My Shopping Experience was really bad during the first few
+                months of this pandemic. But now, I have StockShop that allows
+                me to have a productive shopping experience."</h3>
+        </div>
+    </div>
+
+    <!-- Customer login widget -->
+    <div id="customerLoginDiv">
+        <div class="d-fluid" id="searchInputDiv">
+            <div class="container-fluid">
+                <div class="form-group text-center">
+                    <div class="container mt-5">
+                        <div id="firebaseui-auth-container"></div>
+                        <div id="loader"></div>
+                    </div>
+                    <button class="mt-5" type="button" style="display:block" onclick="customerAccount()" id="signUpButton" class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business login widget-->
+    <div id="loginDivMain">
+        <div class="d-fluid" id="searchInputDiv">
+            <div class="container-fluid">
+                <div class="form-group text-center">
+                    <div class="container mt-5">
+                        <div id="firebaseui-auth-container"></div>
+                        <div id="loader"></div>
+                    </div>
+                    <button class="mt-5" type="button" style="display:block" onclick="businessAccount()" id="signUpButton" class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="scripts/firebase.js"> </script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 
 </html>
